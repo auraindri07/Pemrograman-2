@@ -1,0 +1,534 @@
+/* RESET BASIC STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f7f3f9;
+    color: #4a3e4d;
+    padding: 30px 0;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 20px 50px rgba(163, 142, 178, 0.15);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+
+/* HEADER STYLE */
+
+.main-header {
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    color: #4a3e4d;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.header-content h1 {
+    font-size: 2.4rem;
+    margin: 6px 0;
+    font-weight: 800;
+    color: #3b2d42;
+}
+
+.header-content p {
+    font-size: 0.95rem;
+    opacity: 0.75;
+}
+
+
+/* NAVBAR STYLE */
+
+.top-nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0e6f5;
+    position: relative;
+    z-index: 9999;
+}
+
+.top-nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.top-nav>ul>li {
+    position: relative;
+}
+
+.top-nav>ul>li>a {
+    display: block;
+    padding: 18px 24px;
+    color: #7d6e83;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.top-nav>ul>li>a:hover,
+.top-nav>ul>li>a.active {
+    color: #a180b5;
+    background-color: #fdfaf2;
+}
+
+.top-nav .login-btn {
+    margin-left: auto;
+    margin-right: 15px;
+    background-color: #e0c3fc;
+    border-radius: 12px;
+}
+
+.top-nav .login-btn a {
+    color: #4a3e4d !important;
+    padding: 10px 20px !important;
+}
+
+
+/* DROPDOWN VERTICAL */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 200px;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(163, 142, 178, 0.2);
+    border-radius: 16px;
+    border: 1px solid #f0e6f5;
+}
+
+.dropdown-menu li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #4a3e4d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f7f3f9;
+    color: #a180b5;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* LAYOUT UTAMA */
+
+.main-layout {
+    display: flex;
+    min-height: 480px;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #fbf9fc;
+    padding: 35px 20px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #bfaec6;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.menu-section a {
+    display: block;
+    padding: 11px 14px;
+    color: #615266;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    transition: all 0.2s;
+}
+
+.menu-section a:hover {
+    background-color: #ffffff;
+    color: #a180b5;
+    box-shadow: 0 4px 12px rgba(163, 142, 178, 0.1);
+}
+
+.content-area {
+    flex: 1;
+    padding: 45px;
+    background-color: #ffffff;
+}
+
+.welcome-card {
+    background: #fdfbfe;
+    border-radius: 20px;
+    padding: 35px;
+    border: 1px solid #f5edf8;
+}
+
+.welcome-card h1 {
+    font-size: 2.2rem;
+    color: #3b2d42;
+    margin-bottom: 12px;
+}
+
+.welcome-card p {
+    color: #7d6e83;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.main-footer {
+    background-color: #f7f3f9;
+    color: #a39eb0;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+}
+
+
+/* ==========================================================================
+   TAMBAHAN DESAIN KHUSUS HALAMAN LOGIN (PASTEL STYLE)
+   ========================================================================== */
+
+.login-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 480px;
+    background-color: #fcfbfe;
+    padding: 40px 20px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #f5edf8;
+    box-shadow: 0 10px 30px rgba(163, 142, 178, 0.08);
+}
+
+.login-card-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-card-header h2 {
+    font-size: 1.6rem;
+    color: #3b2d42;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.login-card-header p {
+    font-size: 0.9rem;
+    color: #8c7e93;
+}
+
+
+/* INPUT STYLE */
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #615266;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px 12px 42px;
+    border: 1.5px solid #eaddf2;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: #4a3e4d;
+    background-color: #fdfbfe;
+    transition: all 0.2s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #a180b5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(161, 128, 181, 0.15);
+}
+
+
+/* OPTIONS (REMEMBER ME & LUPA PASSWORD) */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #7d6e83;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #a180b5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-pass:hover {
+    text-decoration: underline;
+}
+
+
+/* BUTTON LOGIN STYLE */
+
+.submit-login-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    border: none;
+    border-radius: 12px;
+    color: #3b2d42;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(163, 142, 178, 0.2);
+    transition: all 0.2s ease;
+}
+
+.submit-login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(163, 142, 178, 0.3);
+}
+
+.submit-login-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ==========================================================================
+   DESAIN HALAMAN MASTER DATA (FORM & TABEL MODERN PASTEL)
+   ========================================================================== */
+
+.data-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #f5edf8;
+    box-shadow: 0 4px 20px rgba(163, 142, 178, 0.03);
+}
+
+.data-card h2 {
+    font-size: 1.4rem;
+    color: #3b2d42;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+/* SIDEBAR ACTIVE STATE */
+
+.menu-section a.active-sidebar {
+    background-color: #ffffff;
+    color: #a180b5;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(163, 142, 178, 0.1);
+}
+
+
+/* FORM LAYOUT GLOBAL (MAHASISWA & TRANSAKSI NILAI) */
+
+.mahasiswa-form .form-row,
+.data-card .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.mahasiswa-form .form-input-group,
+.data-card .form-input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mahasiswa-form label,
+.data-card label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #615266;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+
+/* MENYERAGAMKAN SEMUA INPUT TEXT, SELECT, NUMBER */
+
+.mahasiswa-form input[type="text"],
+.mahasiswa-form input[type="number"],
+.mahasiswa-form select,
+.data-card input[type="text"],
+.data-card input[type="number"],
+.data-card select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #eaddf2;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #4a3e4d;
+    background-color: #fdfbfe;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.mahasiswa-form input:focus,
+.mahasiswa-form select:focus,
+.mahasiswa-form input[type="number"]:focus,
+.data-card input:focus,
+.data-card select:focus,
+.data-card input[type="number"]:focus {
+    outline: none;
+    border-color: #a180b5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(161, 128, 181, 0.1);
+}
+
+.save-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    border: none;
+    border-radius: 10px;
+    color: #3b2d42;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(163, 142, 178, 0.2);
+}
+
+
+/* TABEL STYLE KEKINIAN */
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #f7f3f9;
+    color: #615266;
+    padding: 14px 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #eaddf2;
+}
+
+.styled-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f5edf8;
+    color: #4a3e4d;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #fdfbfe;
+}
+
+
+/* TOMBOL AKSI DI TABEL */
+
+.action-btn {
+    padding: 6px 10px;
+    border: 1px solid #eaddf2;
+    background-color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.action-btn.edit:hover {
+    background-color: #e8f5e9;
+    border-color: #81c784;
+}
+
+.action-btn.delete:hover {
+    background-color: #ffebee;
+    border-color: #e57373;
+}
